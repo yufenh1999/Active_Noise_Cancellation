@@ -1,0 +1,39 @@
+ 
+****************************************
+Report : clock timing
+        -type summary
+Design : hann2ifft
+Version: T-2022.03-SP3
+Date   : Fri Dec  8 16:28:18 2023
+****************************************
+
+  Clock: core_clk
+----------------------------------------------------------------------------
+  Maximum setup launch latency:
+      H2/out_data_reg_31_/CLK                                0.10      wr-+
+
+  Minimum setup capture latency:
+      H2/out_data_reg_31_/CLK                                0.10      wr-+
+
+  Minimum hold launch latency:
+      H2/out_data_reg_31_/CLK                                0.10      br-+
+
+  Maximum hold capture latency:
+      H2/out_data_reg_31_/CLK                                0.10      br-+
+
+  Maximum active transition:
+      H2/out_data_reg_31_/CLK                                0.08      wr-+
+
+  Minimum active transition:
+      H2/out_data_reg_31_/CLK                                0.08      wr-+
+
+  Maximum setup skew:
+      F2/F1/SU1/DB1_buffer_re_reg_0__0_/CLK                            wr-+
+      F2/F1/SU1/DB1_buffer_re_reg_1__0_/CLK                  0.00      wr-+
+
+  Maximum hold skew:
+      F2/F1/SU1/DB1_buffer_re_reg_0__0_/CLK                            br-+
+      F2/F1/SU1/DB1_buffer_re_reg_1__0_/CLK                  0.00      br-+
+----------------------------------------------------------------------------
+
+1

@@ -1,0 +1,73 @@
+ 
+****************************************
+Report : net fanout
+        -high_fanout
+Design : hann2ifft
+Version: T-2022.03-SP3
+Date   : Fri Dec  8 16:28:17 2023
+****************************************
+
+
+Operating Conditions: tt1p05v25c   Library: saed32rvt_tt1p05v25c
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+hann2ifft              540000            saed32rvt_tt1p05v25c
+hann2ifft_hanning_0    8000              saed32rvt_tt1p05v25c
+hann2ifft_fft2ifft_0   540000            saed32rvt_tt1p05v25c
+hann2ifft_fft_1        140000            saed32rvt_tt1p05v25c
+hann2ifft_top_0        140000            saed32rvt_tt1p05v25c
+hann2ifft_ifft_0       140000            saed32rvt_tt1p05v25c
+hann2ifft_sdf_r22_LOG_DEPTH5_0
+                       35000             saed32rvt_tt1p05v25c
+hann2ifft_sdf_r22_LOG_DEPTH3_0
+                       35000             saed32rvt_tt1p05v25c
+hann2ifft_sort_0       140000            saed32rvt_tt1p05v25c
+hann2ifft_CORDIC_modify_0
+                       35000             saed32rvt_tt1p05v25c
+hann2ifft_noise_cancel_seperate_0
+                       35000             saed32rvt_tt1p05v25c
+hann2ifft_CORDIC1_0    35000             saed32rvt_tt1p05v25c
+hann2ifft_fft_0        140000            saed32rvt_tt1p05v25c
+hann2ifft_CORDIC_stage0_3
+                       8000              saed32rvt_tt1p05v25c
+hann2ifft_CORDIC_stage0_2
+                       8000              saed32rvt_tt1p05v25c
+hann2ifft_CORDIC_stage0_1
+                       8000              saed32rvt_tt1p05v25c
+hann2ifft_CORDIC_stage0_0
+                       8000              saed32rvt_tt1p05v25c
+hann2ifft_CORDIC_stage0_4
+                       8000              saed32rvt_tt1p05v25c
+hann2ifft_CORDIC_stage_3
+                       8000              saed32rvt_tt1p05v25c
+hann2ifft_CORDIC_stage_2
+                       8000              saed32rvt_tt1p05v25c
+hann2ifft_CORDIC_stage_1
+                       8000              saed32rvt_tt1p05v25c
+hann2ifft_CORDIC_stage_0
+                       8000              saed32rvt_tt1p05v25c
+hann2ifft_CORDIC_stage_4
+                       16000             saed32rvt_tt1p05v25c
+hann2ifft_sort_1       70000             saed32rvt_tt1p05v25c
+hann2ifft_sdf_r22_LOG_DEPTH5_1
+                       70000             saed32rvt_tt1p05v25c
+hann2ifft_sdf_r22_LOG_DEPTH3_1
+                       35000             saed32rvt_tt1p05v25c
+
+
+Attributes:
+   dr - drc disabled
+    c - annotated capacitance
+    d - dont_touch
+    i - ideal_net
+    I - ideal_network
+    p - includes pin load
+    r - annotated resistance
+    h - high fanout
+
+Net                 Fanout   Attributes   Capacitance   Driver
+--------------------------------------------------------------------------------
+clk                  27480   dr, h        1001046.88    clk
+1

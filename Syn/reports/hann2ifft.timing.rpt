@@ -1,0 +1,558 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -nets
+        -max_paths 1
+        -transition_time
+Design : hann2ifft
+Version: T-2022.03-SP3
+Date   : Fri Dec  8 16:28:18 2023
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: tt1p05v25c   Library: saed32rvt_tt1p05v25c
+Wire Load Model Mode: enclosed
+
+  Startpoint: F2/T1/CORDIC/vec_stage1/R_7540
+              (rising edge-triggered flip-flop clocked by core_clk)
+  Endpoint: F2/T1/CORDIC/vec_stage2/R_7454
+            (rising edge-triggered flip-flop clocked by core_clk)
+  Path Group: core_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  hann2ifft          540000                saed32rvt_tt1p05v25c
+  hann2ifft_CORDIC_stage0_3 8000           saed32rvt_tt1p05v25c
+  hann2ifft_CORDIC_modify_0 35000          saed32rvt_tt1p05v25c
+  hann2ifft_CORDIC_stage0_2 8000           saed32rvt_tt1p05v25c
+
+Attributes:
+    d - dont_touch
+    u - dont_use
+   mo - map_only
+   so - size_only
+    i - ideal_net or ideal_network
+  inf - infeasible path
+
+  Point                                       Fanout     Trans      Incr       Path      Attributes
+  ---------------------------------------------------------------------------------------------------------
+  clock core_clk (rise edge)                                        0.00       0.00
+  clock network delay (ideal)                                       0.10       0.10
+  F2/T1/CORDIC/vec_stage1/R_7540/CLK (DFFX1_RVT)          0.08      0.00 #     0.10 r
+  F2/T1/CORDIC/vec_stage1/R_7540/Q (DFFX1_RVT)            0.05      0.15       0.25 f
+  F2/T1/CORDIC/vec_stage1/n4596 (net)           2                   0.00       0.25 f
+  F2/T1/CORDIC/vec_stage1/U545/Y (XOR2X1_RVT)             0.03      0.21       0.46 f
+  F2/T1/CORDIC/vec_stage1/n5930 (net)           1                   0.00       0.46 f
+  F2/T1/CORDIC/vec_stage1/U235/CO (FADDX1_RVT)            0.03      0.20       0.65 f
+  F2/T1/CORDIC/vec_stage1/n5936 (net)           1                   0.00       0.65 f
+  F2/T1/CORDIC/vec_stage1/U229/CO (FADDX1_RVT)            0.03      0.20       0.85 f
+  F2/T1/CORDIC/vec_stage1/n5944 (net)           1                   0.00       0.85 f
+  F2/T1/CORDIC/vec_stage1/U238/CO (FADDX1_RVT)            0.03      0.20       1.05 f
+  F2/T1/CORDIC/vec_stage1/n5951 (net)           1                   0.00       1.05 f
+  F2/T1/CORDIC/vec_stage1/U1134/CO (FADDX1_RVT)           0.03      0.20       1.25 f
+  F2/T1/CORDIC/vec_stage1/n5955 (net)           1                   0.00       1.25 f
+  F2/T1/CORDIC/vec_stage1/U1136/CO (FADDX1_RVT)           0.03      0.20       1.45 f
+  F2/T1/CORDIC/vec_stage1/n5959 (net)           1                   0.00       1.45 f
+  F2/T1/CORDIC/vec_stage1/U1138/CO (FADDX1_RVT)           0.03      0.20       1.65 f
+  F2/T1/CORDIC/vec_stage1/n5962 (net)           1                   0.00       1.65 f
+  F2/T1/CORDIC/vec_stage1/U1140/CO (FADDX1_RVT)           0.03      0.20       1.85 f
+  F2/T1/CORDIC/vec_stage1/n5965 (net)           1                   0.00       1.85 f
+  F2/T1/CORDIC/vec_stage1/U213/CO (FADDX1_RVT)            0.03      0.20       2.05 f
+  F2/T1/CORDIC/vec_stage1/n5968 (net)           1                   0.00       2.05 f
+  F2/T1/CORDIC/vec_stage1/U1143/CO (FADDX1_RVT)           0.03      0.20       2.25 f
+  F2/T1/CORDIC/vec_stage1/n5971 (net)           1                   0.00       2.25 f
+  F2/T1/CORDIC/vec_stage1/U236/CO (FADDX1_RVT)            0.03      0.20       2.45 f
+  F2/T1/CORDIC/vec_stage1/n5974 (net)           1                   0.00       2.45 f
+  F2/T1/CORDIC/vec_stage1/U237/CO (FADDX1_RVT)            0.03      0.20       2.65 f
+  F2/T1/CORDIC/vec_stage1/n5977 (net)           1                   0.00       2.65 f
+  F2/T1/CORDIC/vec_stage1/U240/CO (FADDX1_RVT)            0.03      0.20       2.85 f
+  F2/T1/CORDIC/vec_stage1/n5980 (net)           1                   0.00       2.85 f
+  F2/T1/CORDIC/vec_stage1/U1148/CO (FADDX1_RVT)           0.03      0.20       3.05 f
+  F2/T1/CORDIC/vec_stage1/n5983 (net)           1                   0.00       3.05 f
+  F2/T1/CORDIC/vec_stage1/U1150/CO (FADDX1_RVT)           0.03      0.20       3.25 f
+  F2/T1/CORDIC/vec_stage1/n5986 (net)           1                   0.00       3.25 f
+  F2/T1/CORDIC/vec_stage1/U1152/CO (FADDX1_RVT)           0.03      0.20       3.45 f
+  F2/T1/CORDIC/vec_stage1/n5989 (net)           1                   0.00       3.45 f
+  F2/T1/CORDIC/vec_stage1/U212/CO (FADDX1_RVT)            0.03      0.20       3.65 f
+  F2/T1/CORDIC/vec_stage1/n5992 (net)           1                   0.00       3.65 f
+  F2/T1/CORDIC/vec_stage1/U211/CO (FADDX1_RVT)            0.03      0.20       3.85 f
+  F2/T1/CORDIC/vec_stage1/n5995 (net)           1                   0.00       3.85 f
+  F2/T1/CORDIC/vec_stage1/U210/CO (FADDX1_RVT)            0.03      0.20       4.05 f
+  F2/T1/CORDIC/vec_stage1/n5997 (net)           1                   0.00       4.05 f
+  F2/T1/CORDIC/vec_stage1/U209/CO (FADDX1_RVT)            0.03      0.20       4.25 f
+  F2/T1/CORDIC/vec_stage1/DP_OP_96J14_157_1161_n14 (net)     1      0.00       4.25 f
+  F2/T1/CORDIC/vec_stage1/U239/CO (FADDX1_RVT)            0.03      0.20       4.45 f
+  F2/T1/CORDIC/vec_stage1/n5861 (net)           1                   0.00       4.45 f
+  F2/T1/CORDIC/vec_stage1/U1096/CO (FADDX1_RVT)           0.03      0.20       4.64 f
+  F2/T1/CORDIC/vec_stage1/n5867 (net)           1                   0.00       4.64 f
+  F2/T1/CORDIC/vec_stage1/U1099/CO (FADDX1_RVT)           0.03      0.20       4.84 f
+  F2/T1/CORDIC/vec_stage1/n5873 (net)           1                   0.00       4.84 f
+  F2/T1/CORDIC/vec_stage1/U1102/CO (FADDX1_RVT)           0.03      0.20       5.04 f
+  F2/T1/CORDIC/vec_stage1/n5879 (net)           1                   0.00       5.04 f
+  F2/T1/CORDIC/vec_stage1/U1105/CO (FADDX1_RVT)           0.03      0.20       5.24 f
+  F2/T1/CORDIC/vec_stage1/n5885 (net)           1                   0.00       5.24 f
+  F2/T1/CORDIC/vec_stage1/U1108/CO (FADDX1_RVT)           0.03      0.20       5.44 f
+  F2/T1/CORDIC/vec_stage1/n5891 (net)           1                   0.00       5.44 f
+  F2/T1/CORDIC/vec_stage1/U1111/CO (FADDX1_RVT)           0.03      0.20       5.64 f
+  F2/T1/CORDIC/vec_stage1/n5897 (net)           1                   0.00       5.64 f
+  F2/T1/CORDIC/vec_stage1/U1114/CO (FADDX1_RVT)           0.03      0.20       5.84 f
+  F2/T1/CORDIC/vec_stage1/n5903 (net)           1                   0.00       5.84 f
+  F2/T1/CORDIC/vec_stage1/U221/CO (FADDX1_RVT)            0.03      0.20       6.04 f
+  F2/T1/CORDIC/vec_stage1/n5909 (net)           1                   0.00       6.04 f
+  F2/T1/CORDIC/vec_stage1/U220/CO (FADDX1_RVT)            0.03      0.20       6.24 f
+  F2/T1/CORDIC/vec_stage1/n5817 (net)           1                   0.00       6.24 f
+  F2/T1/CORDIC/vec_stage1/U219/CO (FADDX1_RVT)            0.03      0.20       6.44 f
+  F2/T1/CORDIC/vec_stage1/n6000 (net)           1                   0.00       6.44 f
+  F2/T1/CORDIC/vec_stage1/U218/CO (FADDX1_RVT)            0.02      0.19       6.63 f
+  F2/T1/CORDIC/vec_stage1/n6004 (net)           1                   0.00       6.63 f
+  F2/T1/CORDIC/vec_stage1/U1157/Y (XOR2X1_RVT)            0.01      0.16       6.79 r
+  F2/T1/CORDIC/vec_stage1/n6005 (net)           1                   0.00       6.79 r
+  F2/T1/CORDIC/vec_stage1/U222/Y (AND2X1_RVT)             0.02      0.06       6.85 r
+  F2/T1/CORDIC/vec_stage1/y_out[31] (net)       8                   0.00       6.85 r
+  F2/T1/CORDIC/vec_stage1/y_out[31] (hann2ifft_CORDIC_stage0_3)     0.00       6.85 r
+  F2/T1/CORDIC/y1_vec[31] (net)                                     0.00       6.85 r
+  F2/T1/CORDIC/vec_stage2/y_in[31] (hann2ifft_CORDIC_stage0_2)      0.00       6.85 r
+  F2/T1/CORDIC/vec_stage2/y_in[31] (net)                            0.00       6.85 r
+  F2/T1/CORDIC/vec_stage2/U254/Y (INVX1_RVT)              0.20      0.25       7.10 f
+  F2/T1/CORDIC/vec_stage2/n4581 (net)           7                   0.00       7.10 f
+  F2/T1/CORDIC/vec_stage2/U343/CO (FADDX1_RVT)            0.03      0.40       7.50 f
+  F2/T1/CORDIC/vec_stage2/n4575 (net)           1                   0.00       7.50 f
+  F2/T1/CORDIC/vec_stage2/U340/CO (FADDX1_RVT)            0.03      0.20       7.70 f
+  F2/T1/CORDIC/vec_stage2/n4571 (net)           1                   0.00       7.70 f
+  F2/T1/CORDIC/vec_stage2/U336/CO (FADDX1_RVT)            0.03      0.20       7.90 f
+  F2/T1/CORDIC/vec_stage2/n4566 (net)           1                   0.00       7.90 f
+  F2/T1/CORDIC/vec_stage2/U334/CO (FADDX1_RVT)            0.03      0.20       8.10 f
+  F2/T1/CORDIC/vec_stage2/n4562 (net)           1                   0.00       8.10 f
+  F2/T1/CORDIC/vec_stage2/U332/CO (FADDX1_RVT)            0.03      0.20       8.30 f
+  F2/T1/CORDIC/vec_stage2/n4558 (net)           1                   0.00       8.30 f
+  F2/T1/CORDIC/vec_stage2/U330/CO (FADDX1_RVT)            0.03      0.20       8.50 f
+  F2/T1/CORDIC/vec_stage2/n4554 (net)           1                   0.00       8.50 f
+  F2/T1/CORDIC/vec_stage2/U328/CO (FADDX1_RVT)            0.03      0.20       8.70 f
+  F2/T1/CORDIC/vec_stage2/n4550 (net)           1                   0.00       8.70 f
+  F2/T1/CORDIC/vec_stage2/U326/CO (FADDX1_RVT)            0.03      0.20       8.90 f
+  F2/T1/CORDIC/vec_stage2/n4546 (net)           1                   0.00       8.90 f
+  F2/T1/CORDIC/vec_stage2/U324/CO (FADDX1_RVT)            0.03      0.20       9.10 f
+  F2/T1/CORDIC/vec_stage2/n4541 (net)           1                   0.00       9.10 f
+  F2/T1/CORDIC/vec_stage2/U322/CO (FADDX1_RVT)            0.03      0.20       9.30 f
+  F2/T1/CORDIC/vec_stage2/n4537 (net)           1                   0.00       9.30 f
+  F2/T1/CORDIC/vec_stage2/U320/CO (FADDX1_RVT)            0.03      0.20       9.50 f
+  F2/T1/CORDIC/vec_stage2/n4533 (net)           1                   0.00       9.50 f
+  F2/T1/CORDIC/vec_stage2/U318/CO (FADDX1_RVT)            0.03      0.20       9.70 f
+  F2/T1/CORDIC/vec_stage2/n4529 (net)           1                   0.00       9.70 f
+  F2/T1/CORDIC/vec_stage2/U316/CO (FADDX1_RVT)            0.03      0.20       9.90 f
+  F2/T1/CORDIC/vec_stage2/n4525 (net)           1                   0.00       9.90 f
+  F2/T1/CORDIC/vec_stage2/U314/CO (FADDX1_RVT)            0.03      0.20      10.10 f
+  F2/T1/CORDIC/vec_stage2/n4521 (net)           1                   0.00      10.10 f
+  F2/T1/CORDIC/vec_stage2/U312/CO (FADDX1_RVT)            0.03      0.20      10.30 f
+  F2/T1/CORDIC/vec_stage2/n4516 (net)           1                   0.00      10.30 f
+  F2/T1/CORDIC/vec_stage2/U309/CO (FADDX1_RVT)            0.03      0.20      10.50 f
+  F2/T1/CORDIC/vec_stage2/n4512 (net)           1                   0.00      10.50 f
+  F2/T1/CORDIC/vec_stage2/U306/CO (FADDX1_RVT)            0.03      0.20      10.70 f
+  F2/T1/CORDIC/vec_stage2/n4508 (net)           1                   0.00      10.70 f
+  F2/T1/CORDIC/vec_stage2/U304/CO (FADDX1_RVT)            0.03      0.20      10.89 f
+  F2/T1/CORDIC/vec_stage2/n4505 (net)           1                   0.00      10.89 f
+  F2/T1/CORDIC/vec_stage2/U302/CO (FADDX1_RVT)            0.03      0.20      11.09 f
+  F2/T1/CORDIC/vec_stage2/n4502 (net)           1                   0.00      11.09 f
+  F2/T1/CORDIC/vec_stage2/U300/CO (FADDX1_RVT)            0.03      0.20      11.29 f
+  F2/T1/CORDIC/vec_stage2/n4498 (net)           1                   0.00      11.29 f
+  F2/T1/CORDIC/vec_stage2/U297/CO (FADDX1_RVT)            0.03      0.20      11.49 f
+  F2/T1/CORDIC/vec_stage2/n4495 (net)           1                   0.00      11.49 f
+  F2/T1/CORDIC/vec_stage2/U296/CO (FADDX1_RVT)            0.03      0.20      11.69 f
+  F2/T1/CORDIC/vec_stage2/n4492 (net)           1                   0.00      11.69 f
+  F2/T1/CORDIC/vec_stage2/U295/CO (FADDX1_RVT)            0.03      0.20      11.89 f
+  F2/T1/CORDIC/vec_stage2/n4489 (net)           1                   0.00      11.89 f
+  F2/T1/CORDIC/vec_stage2/U294/CO (FADDX1_RVT)            0.03      0.20      12.09 f
+  F2/T1/CORDIC/vec_stage2/n4487 (net)           1                   0.00      12.09 f
+  F2/T1/CORDIC/vec_stage2/U293/CO (FADDX1_RVT)            0.03      0.20      12.29 f
+  F2/T1/CORDIC/vec_stage2/n4485 (net)           1                   0.00      12.29 f
+  F2/T1/CORDIC/vec_stage2/U292/CO (FADDX1_RVT)            0.03      0.20      12.49 f
+  F2/T1/CORDIC/vec_stage2/n4484 (net)           1                   0.00      12.49 f
+  F2/T1/CORDIC/vec_stage2/U291/CO (FADDX1_RVT)            0.03      0.20      12.69 f
+  F2/T1/CORDIC/vec_stage2/n4483 (net)           1                   0.00      12.69 f
+  F2/T1/CORDIC/vec_stage2/U290/CO (FADDX1_RVT)            0.03      0.20      12.89 f
+  F2/T1/CORDIC/vec_stage2/n4482 (net)           1                   0.00      12.89 f
+  F2/T1/CORDIC/vec_stage2/U289/CO (FADDX1_RVT)            0.03      0.20      13.09 f
+  F2/T1/CORDIC/vec_stage2/n4481 (net)           1                   0.00      13.09 f
+  F2/T1/CORDIC/vec_stage2/U288/CO (FADDX1_RVT)            0.03      0.20      13.29 f
+  F2/T1/CORDIC/vec_stage2/n4471 (net)           1                   0.00      13.29 f
+  F2/T1/CORDIC/vec_stage2/U256/CO (FADDX1_RVT)            0.03      0.19      13.49 f
+  F2/T1/CORDIC/vec_stage2/n4473 (net)           1                   0.00      13.49 f
+  F2/T1/CORDIC/vec_stage2/U258/Y (XOR2X1_RVT)             0.04      0.19      13.68 r
+  F2/T1/CORDIC/vec_stage2/n4474 (net)           6                   0.00      13.68 r
+  F2/T1/CORDIC/vec_stage2/U259/Y (INVX1_RVT)              0.16      0.22      13.90 f
+  F2/T1/CORDIC/vec_stage2/n4500 (net)           8                   0.00      13.90 f
+  F2/T1/CORDIC/vec_stage2/U298/Y (INVX1_RVT)              0.04      0.20      14.09 r
+  F2/T1/CORDIC/vec_stage2/n4579 (net)           5                   0.00      14.09 r
+  F2/T1/CORDIC/vec_stage2/U337/Y (INVX1_RVT)              0.16      0.23      14.32 f
+  F2/T1/CORDIC/vec_stage2/n4584 (net)          10                   0.00      14.32 f
+  F2/T1/CORDIC/vec_stage2/U345/Y (XOR2X1_RVT)             0.03      0.29      14.61 f
+  F2/T1/CORDIC/vec_stage2/n4751 (net)           1                   0.00      14.61 f
+  F2/T1/CORDIC/vec_stage2/U450/CO (FADDX1_RVT)            0.03      0.20      14.81 f
+  F2/T1/CORDIC/vec_stage2/n4745 (net)           1                   0.00      14.81 f
+  F2/T1/CORDIC/vec_stage2/U447/CO (FADDX1_RVT)            0.03      0.20      15.01 f
+  F2/T1/CORDIC/vec_stage2/n4739 (net)           1                   0.00      15.01 f
+  F2/T1/CORDIC/vec_stage2/U444/CO (FADDX1_RVT)            0.03      0.20      15.21 f
+  F2/T1/CORDIC/vec_stage2/n4733 (net)           1                   0.00      15.21 f
+  F2/T1/CORDIC/vec_stage2/U442/CO (FADDX1_RVT)            0.03      0.20      15.41 f
+  F2/T1/CORDIC/vec_stage2/n4727 (net)           1                   0.00      15.41 f
+  F2/T1/CORDIC/vec_stage2/U439/CO (FADDX1_RVT)            0.03      0.20      15.61 f
+  F2/T1/CORDIC/vec_stage2/n4721 (net)           1                   0.00      15.61 f
+  F2/T1/CORDIC/vec_stage2/U436/CO (FADDX1_RVT)            0.03      0.20      15.81 f
+  F2/T1/CORDIC/vec_stage2/n4715 (net)           1                   0.00      15.81 f
+  F2/T1/CORDIC/vec_stage2/U433/CO (FADDX1_RVT)            0.03      0.20      16.01 f
+  F2/T1/CORDIC/vec_stage2/n4709 (net)           1                   0.00      16.01 f
+  F2/T1/CORDIC/vec_stage2/U430/CO (FADDX1_RVT)            0.03      0.20      16.21 f
+  F2/T1/CORDIC/vec_stage2/n4703 (net)           1                   0.00      16.21 f
+  F2/T1/CORDIC/vec_stage2/U427/CO (FADDX1_RVT)            0.03      0.20      16.41 f
+  F2/T1/CORDIC/vec_stage2/n4697 (net)           1                   0.00      16.41 f
+  F2/T1/CORDIC/vec_stage2/U425/CO (FADDX1_RVT)            0.03      0.20      16.61 f
+  F2/T1/CORDIC/vec_stage2/n4691 (net)           1                   0.00      16.61 f
+  F2/T1/CORDIC/vec_stage2/U422/CO (FADDX1_RVT)            0.03      0.20      16.81 f
+  F2/T1/CORDIC/vec_stage2/n4685 (net)           1                   0.00      16.81 f
+  F2/T1/CORDIC/vec_stage2/U419/CO (FADDX1_RVT)            0.03      0.20      17.01 f
+  F2/T1/CORDIC/vec_stage2/n4679 (net)           1                   0.00      17.01 f
+  F2/T1/CORDIC/vec_stage2/U417/CO (FADDX1_RVT)            0.03      0.20      17.20 f
+  F2/T1/CORDIC/vec_stage2/n4673 (net)           1                   0.00      17.20 f
+  F2/T1/CORDIC/vec_stage2/U414/CO (FADDX1_RVT)            0.03      0.20      17.40 f
+  F2/T1/CORDIC/vec_stage2/n4667 (net)           1                   0.00      17.40 f
+  F2/T1/CORDIC/vec_stage2/U411/CO (FADDX1_RVT)            0.03      0.20      17.60 f
+  F2/T1/CORDIC/vec_stage2/n4661 (net)           1                   0.00      17.60 f
+  F2/T1/CORDIC/vec_stage2/U409/CO (FADDX1_RVT)            0.03      0.20      17.80 f
+  F2/T1/CORDIC/vec_stage2/n4656 (net)           1                   0.00      17.80 f
+  F2/T1/CORDIC/vec_stage2/U407/CO (FADDX1_RVT)            0.03      0.20      18.00 f
+  F2/T1/CORDIC/vec_stage2/n4651 (net)           1                   0.00      18.00 f
+  F2/T1/CORDIC/vec_stage2/U404/CO (FADDX1_RVT)            0.03      0.20      18.20 f
+  F2/T1/CORDIC/vec_stage2/n4646 (net)           1                   0.00      18.20 f
+  F2/T1/CORDIC/vec_stage2/U402/CO (FADDX1_RVT)            0.03      0.20      18.40 f
+  F2/T1/CORDIC/vec_stage2/n4641 (net)           1                   0.00      18.40 f
+  F2/T1/CORDIC/vec_stage2/U400/CO (FADDX1_RVT)            0.03      0.20      18.60 f
+  F2/T1/CORDIC/vec_stage2/n4636 (net)           1                   0.00      18.60 f
+  F2/T1/CORDIC/vec_stage2/U398/CO (FADDX1_RVT)            0.03      0.20      18.80 f
+  F2/T1/CORDIC/vec_stage2/n4630 (net)           1                   0.00      18.80 f
+  F2/T1/CORDIC/vec_stage2/U394/CO (FADDX1_RVT)            0.03      0.20      19.00 f
+  F2/T1/CORDIC/vec_stage2/n4625 (net)           1                   0.00      19.00 f
+  F2/T1/CORDIC/vec_stage2/U392/CO (FADDX1_RVT)            0.03      0.20      19.20 f
+  F2/T1/CORDIC/vec_stage2/n4622 (net)           1                   0.00      19.20 f
+  F2/T1/CORDIC/vec_stage2/U391/CO (FADDX1_RVT)            0.03      0.20      19.40 f
+  F2/T1/CORDIC/vec_stage2/n4619 (net)           1                   0.00      19.40 f
+  F2/T1/CORDIC/vec_stage2/U390/CO (FADDX1_RVT)            0.03      0.20      19.60 f
+  F2/T1/CORDIC/vec_stage2/n4617 (net)           1                   0.00      19.60 f
+  F2/T1/CORDIC/vec_stage2/U389/CO (FADDX1_RVT)            0.03      0.20      19.80 f
+  F2/T1/CORDIC/vec_stage2/n4615 (net)           1                   0.00      19.80 f
+  F2/T1/CORDIC/vec_stage2/U388/CO (FADDX1_RVT)            0.03      0.20      20.00 f
+  F2/T1/CORDIC/vec_stage2/n4613 (net)           1                   0.00      20.00 f
+  F2/T1/CORDIC/vec_stage2/U387/CO (FADDX1_RVT)            0.03      0.20      20.20 f
+  F2/T1/CORDIC/vec_stage2/n4611 (net)           1                   0.00      20.20 f
+  F2/T1/CORDIC/vec_stage2/U386/CO (FADDX1_RVT)            0.03      0.20      20.40 f
+  F2/T1/CORDIC/vec_stage2/n4609 (net)           1                   0.00      20.40 f
+  F2/T1/CORDIC/vec_stage2/U385/CO (FADDX1_RVT)            0.03      0.20      20.60 f
+  F2/T1/CORDIC/vec_stage2/n4585 (net)           1                   0.00      20.60 f
+  F2/T1/CORDIC/vec_stage2/U346/CO (FADDX1_RVT)            0.03      0.20      20.80 f
+  F2/T1/CORDIC/vec_stage2/n4587 (net)           1                   0.00      20.80 f
+  F2/T1/CORDIC/vec_stage2/U347/Y (XNOR2X1_RVT)            0.11      0.30      21.10 f
+  F2/T1/CORDIC/vec_stage2/n4588 (net)           6                   0.00      21.10 f
+  F2/T1/CORDIC/vec_stage2/U193/Y (INVX2_RVT)              0.05      0.31      21.41 r
+  F2/T1/CORDIC/vec_stage2/n5881 (net)          14                   0.00      21.41 r
+  F2/T1/CORDIC/vec_stage2/U17/Y (INVX1_RVT)               0.11      0.20      21.61 f
+  F2/T1/CORDIC/vec_stage2/n4775 (net)           9                   0.00      21.61 f
+  F2/T1/CORDIC/vec_stage2/U217/Y (INVX1_RVT)              0.04      0.21      21.82 r
+  F2/T1/CORDIC/vec_stage2/n4969 (net)           7                   0.00      21.82 r
+  F2/T1/CORDIC/vec_stage2/U395/Y (INVX1_RVT)              0.08      0.13      21.95 f
+  F2/T1/CORDIC/vec_stage2/n4757 (net)           5                   0.00      21.95 f
+  F2/T1/CORDIC/vec_stage2/U452/Y (XOR2X1_RVT)             0.03      0.22      22.17 f
+  F2/T1/CORDIC/vec_stage2/n4931 (net)           1                   0.00      22.17 f
+  F2/T1/CORDIC/vec_stage2/U535/CO (FADDX1_RVT)            0.03      0.20      22.37 f
+  F2/T1/CORDIC/vec_stage2/n4924 (net)           1                   0.00      22.37 f
+  F2/T1/CORDIC/vec_stage2/U532/CO (FADDX1_RVT)            0.03      0.20      22.57 f
+  F2/T1/CORDIC/vec_stage2/n4918 (net)           1                   0.00      22.57 f
+  F2/T1/CORDIC/vec_stage2/U530/CO (FADDX1_RVT)            0.03      0.20      22.77 f
+  F2/T1/CORDIC/vec_stage2/n4912 (net)           1                   0.00      22.77 f
+  F2/T1/CORDIC/vec_stage2/U527/CO (FADDX1_RVT)            0.03      0.20      22.97 f
+  F2/T1/CORDIC/vec_stage2/n4906 (net)           1                   0.00      22.97 f
+  F2/T1/CORDIC/vec_stage2/U524/CO (FADDX1_RVT)            0.03      0.20      23.17 f
+  F2/T1/CORDIC/vec_stage2/n4900 (net)           1                   0.00      23.17 f
+  F2/T1/CORDIC/vec_stage2/U521/CO (FADDX1_RVT)            0.03      0.20      23.37 f
+  F2/T1/CORDIC/vec_stage2/n4894 (net)           1                   0.00      23.37 f
+  F2/T1/CORDIC/vec_stage2/U518/CO (FADDX1_RVT)            0.03      0.20      23.57 f
+  F2/T1/CORDIC/vec_stage2/n4888 (net)           1                   0.00      23.57 f
+  F2/T1/CORDIC/vec_stage2/U515/CO (FADDX1_RVT)            0.03      0.20      23.77 f
+  F2/T1/CORDIC/vec_stage2/n4882 (net)           1                   0.00      23.77 f
+  F2/T1/CORDIC/vec_stage2/U512/CO (FADDX1_RVT)            0.03      0.20      23.97 f
+  F2/T1/CORDIC/vec_stage2/n4876 (net)           1                   0.00      23.97 f
+  F2/T1/CORDIC/vec_stage2/U510/CO (FADDX1_RVT)            0.03      0.20      24.17 f
+  F2/T1/CORDIC/vec_stage2/n4870 (net)           1                   0.00      24.17 f
+  F2/T1/CORDIC/vec_stage2/U507/CO (FADDX1_RVT)            0.03      0.20      24.37 f
+  F2/T1/CORDIC/vec_stage2/n4864 (net)           1                   0.00      24.37 f
+  F2/T1/CORDIC/vec_stage2/U504/CO (FADDX1_RVT)            0.03      0.20      24.57 f
+  F2/T1/CORDIC/vec_stage2/n4858 (net)           1                   0.00      24.57 f
+  F2/T1/CORDIC/vec_stage2/U501/CO (FADDX1_RVT)            0.03      0.20      24.77 f
+  F2/T1/CORDIC/vec_stage2/n4852 (net)           1                   0.00      24.77 f
+  F2/T1/CORDIC/vec_stage2/U498/CO (FADDX1_RVT)            0.03      0.20      24.96 f
+  F2/T1/CORDIC/vec_stage2/n4847 (net)           1                   0.00      24.96 f
+  F2/T1/CORDIC/vec_stage2/U496/CO (FADDX1_RVT)            0.03      0.20      25.16 f
+  F2/T1/CORDIC/vec_stage2/n4842 (net)           1                   0.00      25.16 f
+  F2/T1/CORDIC/vec_stage2/U494/CO (FADDX1_RVT)            0.03      0.20      25.36 f
+  F2/T1/CORDIC/vec_stage2/n4837 (net)           1                   0.00      25.36 f
+  F2/T1/CORDIC/vec_stage2/U493/CO (FADDX1_RVT)            0.03      0.20      25.56 f
+  F2/T1/CORDIC/vec_stage2/n4832 (net)           1                   0.00      25.56 f
+  F2/T1/CORDIC/vec_stage2/U491/CO (FADDX1_RVT)            0.03      0.20      25.76 f
+  F2/T1/CORDIC/vec_stage2/n4827 (net)           1                   0.00      25.76 f
+  F2/T1/CORDIC/vec_stage2/U489/CO (FADDX1_RVT)            0.03      0.20      25.96 f
+  F2/T1/CORDIC/vec_stage2/n4822 (net)           1                   0.00      25.96 f
+  F2/T1/CORDIC/vec_stage2/U487/CO (FADDX1_RVT)            0.03      0.20      26.16 f
+  F2/T1/CORDIC/vec_stage2/n4817 (net)           1                   0.00      26.16 f
+  F2/T1/CORDIC/vec_stage2/U485/CO (FADDX1_RVT)            0.03      0.20      26.36 f
+  F2/T1/CORDIC/vec_stage2/n4812 (net)           1                   0.00      26.36 f
+  F2/T1/CORDIC/vec_stage2/U483/CO (FADDX1_RVT)            0.03      0.20      26.56 f
+  F2/T1/CORDIC/vec_stage2/n4809 (net)           1                   0.00      26.56 f
+  F2/T1/CORDIC/vec_stage2/U482/CO (FADDX1_RVT)            0.03      0.20      26.76 f
+  F2/T1/CORDIC/vec_stage2/n4806 (net)           1                   0.00      26.76 f
+  F2/T1/CORDIC/vec_stage2/U481/CO (FADDX1_RVT)            0.03      0.20      26.96 f
+  F2/T1/CORDIC/vec_stage2/n4804 (net)           1                   0.00      26.96 f
+  F2/T1/CORDIC/vec_stage2/U480/CO (FADDX1_RVT)            0.03      0.20      27.16 f
+  F2/T1/CORDIC/vec_stage2/n4802 (net)           1                   0.00      27.16 f
+  F2/T1/CORDIC/vec_stage2/U479/CO (FADDX1_RVT)            0.03      0.20      27.36 f
+  F2/T1/CORDIC/vec_stage2/n4800 (net)           1                   0.00      27.36 f
+  F2/T1/CORDIC/vec_stage2/U478/CO (FADDX1_RVT)            0.03      0.20      27.56 f
+  F2/T1/CORDIC/vec_stage2/n4798 (net)           1                   0.00      27.56 f
+  F2/T1/CORDIC/vec_stage2/U477/CO (FADDX1_RVT)            0.03      0.20      27.76 f
+  F2/T1/CORDIC/vec_stage2/n4796 (net)           1                   0.00      27.76 f
+  F2/T1/CORDIC/vec_stage2/U476/CO (FADDX1_RVT)            0.03      0.20      27.97 f
+  F2/T1/CORDIC/vec_stage2/n4794 (net)           1                   0.00      27.97 f
+  F2/T1/CORDIC/vec_stage2/U475/CO (FADDX1_RVT)            0.03      0.20      28.17 f
+  F2/T1/CORDIC/vec_stage2/n4758 (net)           1                   0.00      28.17 f
+  F2/T1/CORDIC/vec_stage2/U453/CO (FADDX1_RVT)            0.03      0.19      28.36 f
+  F2/T1/CORDIC/vec_stage2/n4760 (net)           1                   0.00      28.36 f
+  F2/T1/CORDIC/vec_stage2/U455/Y (XOR2X1_RVT)             0.12      0.28      28.65 f
+  F2/T1/CORDIC/vec_stage2/n4761 (net)           7                   0.00      28.65 f
+  F2/T1/CORDIC/vec_stage2/U14/Y (INVX1_RVT)               0.04      0.20      28.84 r
+  F2/T1/CORDIC/vec_stage2/n4762 (net)           7                   0.00      28.84 r
+  F2/T1/CORDIC/vec_stage2/U201/Y (INVX1_RVT)              0.12      0.17      29.01 f
+  F2/T1/CORDIC/vec_stage2/n4930 (net)           7                   0.00      29.01 f
+  F2/T1/CORDIC/vec_stage2/U13/Y (INVX1_RVT)               0.03      0.18      29.19 r
+  F2/T1/CORDIC/vec_stage2/n4936 (net)           4                   0.00      29.19 r
+  F2/T1/CORDIC/vec_stage2/U537/Y (XOR2X1_RVT)             0.03      0.12      29.31 f
+  F2/T1/CORDIC/vec_stage2/n5105 (net)           1                   0.00      29.31 f
+  F2/T1/CORDIC/vec_stage2/U642/CO (FADDX1_RVT)            0.03      0.20      29.51 f
+  F2/T1/CORDIC/vec_stage2/n5098 (net)           1                   0.00      29.51 f
+  F2/T1/CORDIC/vec_stage2/U639/CO (FADDX1_RVT)            0.03      0.20      29.71 f
+  F2/T1/CORDIC/vec_stage2/n5092 (net)           1                   0.00      29.71 f
+  F2/T1/CORDIC/vec_stage2/U635/CO (FADDX1_RVT)            0.03      0.20      29.91 f
+  F2/T1/CORDIC/vec_stage2/n5086 (net)           1                   0.00      29.91 f
+  F2/T1/CORDIC/vec_stage2/U632/CO (FADDX1_RVT)            0.03      0.20      30.11 f
+  F2/T1/CORDIC/vec_stage2/n5080 (net)           1                   0.00      30.11 f
+  F2/T1/CORDIC/vec_stage2/U629/CO (FADDX1_RVT)            0.03      0.20      30.31 f
+  F2/T1/CORDIC/vec_stage2/n5074 (net)           1                   0.00      30.31 f
+  F2/T1/CORDIC/vec_stage2/U626/CO (FADDX1_RVT)            0.03      0.20      30.51 f
+  F2/T1/CORDIC/vec_stage2/n5068 (net)           1                   0.00      30.51 f
+  F2/T1/CORDIC/vec_stage2/U623/CO (FADDX1_RVT)            0.03      0.20      30.71 f
+  F2/T1/CORDIC/vec_stage2/n5062 (net)           1                   0.00      30.71 f
+  F2/T1/CORDIC/vec_stage2/U620/CO (FADDX1_RVT)            0.03      0.20      30.91 f
+  F2/T1/CORDIC/vec_stage2/n5056 (net)           1                   0.00      30.91 f
+  F2/T1/CORDIC/vec_stage2/U617/CO (FADDX1_RVT)            0.03      0.20      31.11 f
+  F2/T1/CORDIC/vec_stage2/n5050 (net)           1                   0.00      31.11 f
+  F2/T1/CORDIC/vec_stage2/U614/CO (FADDX1_RVT)            0.03      0.20      31.31 f
+  F2/T1/CORDIC/vec_stage2/n5044 (net)           1                   0.00      31.31 f
+  F2/T1/CORDIC/vec_stage2/U611/CO (FADDX1_RVT)            0.03      0.20      31.50 f
+  F2/T1/CORDIC/vec_stage2/n5038 (net)           1                   0.00      31.50 f
+  F2/T1/CORDIC/vec_stage2/U608/CO (FADDX1_RVT)            0.03      0.20      31.70 f
+  F2/T1/CORDIC/vec_stage2/n5033 (net)           1                   0.00      31.70 f
+  F2/T1/CORDIC/vec_stage2/U605/CO (FADDX1_RVT)            0.03      0.20      31.90 f
+  F2/T1/CORDIC/vec_stage2/n5028 (net)           1                   0.00      31.90 f
+  F2/T1/CORDIC/vec_stage2/U602/CO (FADDX1_RVT)            0.03      0.20      32.10 f
+  F2/T1/CORDIC/vec_stage2/n5023 (net)           1                   0.00      32.10 f
+  F2/T1/CORDIC/vec_stage2/U599/CO (FADDX1_RVT)            0.03      0.20      32.30 f
+  F2/T1/CORDIC/vec_stage2/n5018 (net)           1                   0.00      32.30 f
+  F2/T1/CORDIC/vec_stage2/U596/CO (FADDX1_RVT)            0.03      0.20      32.50 f
+  F2/T1/CORDIC/vec_stage2/n5013 (net)           1                   0.00      32.50 f
+  F2/T1/CORDIC/vec_stage2/U593/CO (FADDX1_RVT)            0.03      0.20      32.70 f
+  F2/T1/CORDIC/vec_stage2/n5008 (net)           1                   0.00      32.70 f
+  F2/T1/CORDIC/vec_stage2/U590/CO (FADDX1_RVT)            0.03      0.20      32.90 f
+  F2/T1/CORDIC/vec_stage2/n5003 (net)           1                   0.00      32.90 f
+  F2/T1/CORDIC/vec_stage2/U587/CO (FADDX1_RVT)            0.03      0.20      33.10 f
+  F2/T1/CORDIC/vec_stage2/n4998 (net)           1                   0.00      33.10 f
+  F2/T1/CORDIC/vec_stage2/U586/CO (FADDX1_RVT)            0.03      0.20      33.30 f
+  F2/T1/CORDIC/vec_stage2/n4993 (net)           1                   0.00      33.30 f
+  F2/T1/CORDIC/vec_stage2/U585/CO (FADDX1_RVT)            0.03      0.20      33.50 f
+  F2/T1/CORDIC/vec_stage2/n4990 (net)           1                   0.00      33.50 f
+  F2/T1/CORDIC/vec_stage2/U584/CO (FADDX1_RVT)            0.03      0.20      33.70 f
+  F2/T1/CORDIC/vec_stage2/n4987 (net)           1                   0.00      33.70 f
+  F2/T1/CORDIC/vec_stage2/U583/CO (FADDX1_RVT)            0.03      0.20      33.90 f
+  F2/T1/CORDIC/vec_stage2/n4985 (net)           1                   0.00      33.90 f
+  F2/T1/CORDIC/vec_stage2/U582/CO (FADDX1_RVT)            0.03      0.20      34.10 f
+  F2/T1/CORDIC/vec_stage2/n4983 (net)           1                   0.00      34.10 f
+  F2/T1/CORDIC/vec_stage2/U581/CO (FADDX1_RVT)            0.03      0.20      34.30 f
+  F2/T1/CORDIC/vec_stage2/n4981 (net)           1                   0.00      34.30 f
+  F2/T1/CORDIC/vec_stage2/U580/CO (FADDX1_RVT)            0.03      0.20      34.50 f
+  F2/T1/CORDIC/vec_stage2/n4979 (net)           1                   0.00      34.50 f
+  F2/T1/CORDIC/vec_stage2/U579/CO (FADDX1_RVT)            0.03      0.20      34.70 f
+  F2/T1/CORDIC/vec_stage2/n4977 (net)           1                   0.00      34.70 f
+  F2/T1/CORDIC/vec_stage2/U578/CO (FADDX1_RVT)            0.03      0.20      34.90 f
+  F2/T1/CORDIC/vec_stage2/n4975 (net)           1                   0.00      34.90 f
+  F2/T1/CORDIC/vec_stage2/U577/CO (FADDX1_RVT)            0.03      0.20      35.10 f
+  F2/T1/CORDIC/vec_stage2/n4973 (net)           1                   0.00      35.10 f
+  F2/T1/CORDIC/vec_stage2/U576/CO (FADDX1_RVT)            0.03      0.20      35.30 f
+  F2/T1/CORDIC/vec_stage2/n4937 (net)           1                   0.00      35.30 f
+  F2/T1/CORDIC/vec_stage2/U538/CO (FADDX1_RVT)            0.03      0.19      35.50 f
+  F2/T1/CORDIC/vec_stage2/n4939 (net)           1                   0.00      35.50 f
+  F2/T1/CORDIC/vec_stage2/U540/Y (XOR2X1_RVT)             0.09      0.25      35.75 f
+  F2/T1/CORDIC/vec_stage2/n4940 (net)           6                   0.00      35.75 f
+  F2/T1/CORDIC/vec_stage2/U184/Y (INVX1_RVT)              0.03      0.18      35.92 r
+  F2/T1/CORDIC/vec_stage2/n5118 (net)           6                   0.00      35.92 r
+  F2/T1/CORDIC/vec_stage2/U9/Y (INVX1_RVT)                0.10      0.15      36.07 f
+  F2/T1/CORDIC/vec_stage2/n5104 (net)           7                   0.00      36.07 f
+  F2/T1/CORDIC/vec_stage2/U636/Y (INVX0_RVT)              0.03      0.15      36.21 r
+  F2/T1/CORDIC/vec_stage2/n5111 (net)           3                   0.00      36.21 r
+  F2/T1/CORDIC/vec_stage2/U644/Y (XOR2X1_RVT)             0.03      0.11      36.33 f
+  F2/T1/CORDIC/vec_stage2/n5115 (net)           1                   0.00      36.33 f
+  F2/T1/CORDIC/vec_stage2/U647/CO (FADDX1_RVT)            0.03      0.20      36.53 f
+  F2/T1/CORDIC/vec_stage2/n5158 (net)           1                   0.00      36.53 f
+  F2/T1/CORDIC/vec_stage2/U675/CO (FADDX1_RVT)            0.03      0.20      36.73 f
+  F2/T1/CORDIC/vec_stage2/n5176 (net)           1                   0.00      36.73 f
+  F2/T1/CORDIC/vec_stage2/U684/CO (FADDX1_RVT)            0.03      0.20      36.93 f
+  F2/T1/CORDIC/vec_stage2/n5197 (net)           1                   0.00      36.93 f
+  F2/T1/CORDIC/vec_stage2/U693/CO (FADDX1_RVT)            0.03      0.20      37.13 f
+  F2/T1/CORDIC/vec_stage2/n5218 (net)           1                   0.00      37.13 f
+  F2/T1/CORDIC/vec_stage2/U702/CO (FADDX1_RVT)            0.03      0.20      37.33 f
+  F2/T1/CORDIC/vec_stage2/n5242 (net)           1                   0.00      37.33 f
+  F2/T1/CORDIC/vec_stage2/U731/CO (FADDX1_RVT)            0.03      0.20      37.53 f
+  F2/T1/CORDIC/vec_stage2/n5262 (net)           1                   0.00      37.53 f
+  F2/T1/CORDIC/vec_stage2/U739/CO (FADDX1_RVT)            0.03      0.20      37.72 f
+  F2/T1/CORDIC/vec_stage2/n5294 (net)           1                   0.00      37.72 f
+  F2/T1/CORDIC/vec_stage2/U755/CO (FADDX1_RVT)            0.03      0.20      37.92 f
+  F2/T1/CORDIC/vec_stage2/n5326 (net)           1                   0.00      37.92 f
+  F2/T1/CORDIC/vec_stage2/U771/CO (FADDX1_RVT)            0.03      0.20      38.12 f
+  F2/T1/CORDIC/vec_stage2/n5358 (net)           1                   0.00      38.12 f
+  F2/T1/CORDIC/vec_stage2/U787/CO (FADDX1_RVT)            0.03      0.20      38.32 f
+  F2/T1/CORDIC/vec_stage2/n5390 (net)           1                   0.00      38.32 f
+  F2/T1/CORDIC/vec_stage2/U803/CO (FADDX1_RVT)            0.03      0.20      38.52 f
+  F2/T1/CORDIC/vec_stage2/n5154 (net)           1                   0.00      38.52 f
+  F2/T1/CORDIC/vec_stage2/U673/CO (FADDX1_RVT)            0.03      0.20      38.72 f
+  F2/T1/CORDIC/vec_stage2/n5170 (net)           1                   0.00      38.72 f
+  F2/T1/CORDIC/vec_stage2/U681/CO (FADDX1_RVT)            0.03      0.20      38.92 f
+  F2/T1/CORDIC/vec_stage2/n5190 (net)           1                   0.00      38.92 f
+  F2/T1/CORDIC/vec_stage2/U690/CO (FADDX1_RVT)            0.03      0.20      39.12 f
+  F2/T1/CORDIC/vec_stage2/n5211 (net)           1                   0.00      39.12 f
+  F2/T1/CORDIC/vec_stage2/U699/CO (FADDX1_RVT)            0.03      0.20      39.32 f
+  F2/T1/CORDIC/vec_stage2/n5235 (net)           1                   0.00      39.32 f
+  F2/T1/CORDIC/vec_stage2/U728/CO (FADDX1_RVT)            0.03      0.20      39.52 f
+  F2/T1/CORDIC/vec_stage2/n5255 (net)           1                   0.00      39.52 f
+  F2/T1/CORDIC/vec_stage2/U736/CO (FADDX1_RVT)            0.03      0.20      39.72 f
+  F2/T1/CORDIC/vec_stage2/n5287 (net)           1                   0.00      39.72 f
+  F2/T1/CORDIC/vec_stage2/U752/CO (FADDX1_RVT)            0.03      0.20      39.92 f
+  F2/T1/CORDIC/vec_stage2/n5319 (net)           1                   0.00      39.92 f
+  F2/T1/CORDIC/vec_stage2/U768/CO (FADDX1_RVT)            0.03      0.20      40.12 f
+  F2/T1/CORDIC/vec_stage2/n5351 (net)           1                   0.00      40.12 f
+  F2/T1/CORDIC/vec_stage2/U784/CO (FADDX1_RVT)            0.03      0.20      40.32 f
+  F2/T1/CORDIC/vec_stage2/n5383 (net)           1                   0.00      40.32 f
+  F2/T1/CORDIC/vec_stage2/U800/CO (FADDX1_RVT)            0.03      0.20      40.52 f
+  F2/T1/CORDIC/vec_stage2/n5415 (net)           1                   0.00      40.52 f
+  F2/T1/CORDIC/vec_stage2/U816/CO (FADDX1_RVT)            0.03      0.20      40.72 f
+  F2/T1/CORDIC/vec_stage2/n5440 (net)           1                   0.00      40.72 f
+  F2/T1/CORDIC/vec_stage2/U830/CO (FADDX1_RVT)            0.03      0.20      40.92 f
+  F2/T1/CORDIC/vec_stage2/n5464 (net)           1                   0.00      40.92 f
+  F2/T1/CORDIC/vec_stage2/U843/CO (FADDX1_RVT)            0.03      0.20      41.12 f
+  F2/T1/CORDIC/vec_stage2/n5488 (net)           1                   0.00      41.12 f
+  F2/T1/CORDIC/vec_stage2/U856/CO (FADDX1_RVT)            0.03      0.20      41.32 f
+  F2/T1/CORDIC/vec_stage2/n5512 (net)           1                   0.00      41.32 f
+  F2/T1/CORDIC/vec_stage2/U869/CO (FADDX1_RVT)            0.03      0.20      41.52 f
+  F2/T1/CORDIC/vec_stage2/n5537 (net)           1                   0.00      41.52 f
+  F2/T1/CORDIC/vec_stage2/U882/CO (FADDX1_RVT)            0.03      0.20      41.72 f
+  F2/T1/CORDIC/vec_stage2/n5561 (net)           1                   0.00      41.72 f
+  F2/T1/CORDIC/vec_stage2/U895/CO (FADDX1_RVT)            0.03      0.20      41.92 f
+  F2/T1/CORDIC/vec_stage2/n5587 (net)           1                   0.00      41.92 f
+  F2/T1/CORDIC/vec_stage2/U908/CO (FADDX1_RVT)            0.03      0.20      42.12 f
+  F2/T1/CORDIC/vec_stage2/n5612 (net)           1                   0.00      42.12 f
+  F2/T1/CORDIC/vec_stage2/U920/CO (FADDX1_RVT)            0.03      0.20      42.32 f
+  F2/T1/CORDIC/vec_stage2/n5637 (net)           1                   0.00      42.32 f
+  F2/T1/CORDIC/vec_stage2/U933/CO (FADDX1_RVT)            0.03      0.19      42.51 f
+  F2/T1/CORDIC/vec_stage2/n5113 (net)           1                   0.00      42.51 f
+  F2/T1/CORDIC/vec_stage2/U646/Y (XOR2X1_RVT)             0.13      0.29      42.80 f
+  F2/T1/CORDIC/vec_stage2/n5114 (net)           7                   0.00      42.80 f
+  F2/T1/CORDIC/vec_stage2/U185/Y (INVX1_RVT)              0.04      0.20      43.00 r
+  F2/T1/CORDIC/vec_stage2/n5648 (net)           7                   0.00      43.00 r
+  F2/T1/CORDIC/vec_stage2/U671/Y (INVX1_RVT)              0.12      0.18      43.18 f
+  F2/T1/CORDIC/vec_stage2/n5585 (net)           8                   0.00      43.18 f
+  F2/T1/CORDIC/vec_stage2/U707/Y (INVX1_RVT)              0.04      0.21      43.39 r
+  F2/T1/CORDIC/vec_stage2/n5610 (net)           7                   0.00      43.39 r
+  F2/T1/CORDIC/vec_stage2/U3/Y (INVX1_RVT)                0.24      0.33      43.72 f
+  F2/T1/CORDIC/vec_stage2/n5958 (net)          10                   0.00      43.72 f
+  F2/T1/CORDIC/vec_stage2/U710/CO (FADDX1_RVT)            0.04      0.45      44.17 f
+  F2/T1/CORDIC/vec_stage2/n5273 (net)           1                   0.00      44.17 f
+  F2/T1/CORDIC/vec_stage2/U744/CO (FADDX1_RVT)            0.04      0.25      44.43 f
+  F2/T1/CORDIC/vec_stage2/n5305 (net)           1                   0.00      44.43 f
+  F2/T1/CORDIC/vec_stage2/U760/CO (FADDX1_RVT)            0.04      0.25      44.68 f
+  F2/T1/CORDIC/vec_stage2/n5337 (net)           1                   0.00      44.68 f
+  F2/T1/CORDIC/vec_stage2/U776/CO (FADDX1_RVT)            0.04      0.25      44.93 f
+  F2/T1/CORDIC/vec_stage2/n5378 (net)           1                   0.00      44.93 f
+  F2/T1/CORDIC/vec_stage2/U797/CO (FADDX1_RVT)            0.03      0.24      45.17 f
+  F2/T1/CORDIC/vec_stage2/n5409 (net)           1                   0.00      45.17 f
+  F2/T1/CORDIC/vec_stage2/U813/CO (FADDX1_RVT)            0.03      0.20      45.37 f
+  F2/T1/CORDIC/vec_stage2/n5437 (net)           1                   0.00      45.37 f
+  F2/T1/CORDIC/vec_stage2/U828/CO (FADDX1_RVT)            0.03      0.20      45.58 f
+  F2/T1/CORDIC/vec_stage2/n5461 (net)           1                   0.00      45.58 f
+  F2/T1/CORDIC/vec_stage2/U841/CO (FADDX1_RVT)            0.03      0.20      45.78 f
+  F2/T1/CORDIC/vec_stage2/n5485 (net)           1                   0.00      45.78 f
+  F2/T1/CORDIC/vec_stage2/U854/CO (FADDX1_RVT)            0.03      0.20      45.98 f
+  F2/T1/CORDIC/vec_stage2/n5509 (net)           1                   0.00      45.98 f
+  F2/T1/CORDIC/vec_stage2/U867/CO (FADDX1_RVT)            0.03      0.20      46.18 f
+  F2/T1/CORDIC/vec_stage2/n5534 (net)           1                   0.00      46.18 f
+  F2/T1/CORDIC/vec_stage2/U880/CO (FADDX1_RVT)            0.03      0.20      46.38 f
+  F2/T1/CORDIC/vec_stage2/n5558 (net)           1                   0.00      46.38 f
+  F2/T1/CORDIC/vec_stage2/U893/CO (FADDX1_RVT)            0.03      0.20      46.58 f
+  F2/T1/CORDIC/vec_stage2/n5583 (net)           1                   0.00      46.58 f
+  F2/T1/CORDIC/vec_stage2/U906/CO (FADDX1_RVT)            0.03      0.20      46.78 f
+  F2/T1/CORDIC/vec_stage2/n5608 (net)           1                   0.00      46.78 f
+  F2/T1/CORDIC/vec_stage2/U918/CO (FADDX1_RVT)            0.03      0.20      46.98 f
+  F2/T1/CORDIC/vec_stage2/n5634 (net)           1                   0.00      46.98 f
+  F2/T1/CORDIC/vec_stage2/U931/CO (FADDX1_RVT)            0.03      0.20      47.18 f
+  F2/T1/CORDIC/vec_stage2/n5663 (net)           1                   0.00      47.18 f
+  F2/T1/CORDIC/vec_stage2/U945/CO (FADDX1_RVT)            0.03      0.20      47.37 f
+  F2/T1/CORDIC/vec_stage2/n5687 (net)           1                   0.00      47.37 f
+  F2/T1/CORDIC/vec_stage2/U959/CO (FADDX1_RVT)            0.03      0.20      47.57 f
+  F2/T1/CORDIC/vec_stage2/n5706 (net)           1                   0.00      47.57 f
+  F2/T1/CORDIC/vec_stage2/U971/CO (FADDX1_RVT)            0.03      0.20      47.77 f
+  F2/T1/CORDIC/vec_stage2/n5727 (net)           1                   0.00      47.77 f
+  F2/T1/CORDIC/vec_stage2/U984/CO (FADDX1_RVT)            0.03      0.20      47.97 f
+  F2/T1/CORDIC/vec_stage2/n5748 (net)           1                   0.00      47.97 f
+  F2/T1/CORDIC/vec_stage2/U997/CO (FADDX1_RVT)            0.03      0.20      48.17 f
+  F2/T1/CORDIC/vec_stage2/n5769 (net)           1                   0.00      48.17 f
+  F2/T1/CORDIC/vec_stage2/U1009/CO (FADDX1_RVT)           0.03      0.20      48.37 f
+  F2/T1/CORDIC/vec_stage2/n5787 (net)           1                   0.00      48.37 f
+  F2/T1/CORDIC/vec_stage2/U1020/CO (FADDX1_RVT)           0.03      0.20      48.57 f
+  F2/T1/CORDIC/vec_stage2/n5809 (net)           1                   0.00      48.57 f
+  F2/T1/CORDIC/vec_stage2/U1034/CO (FADDX1_RVT)           0.03      0.20      48.77 f
+  F2/T1/CORDIC/vec_stage2/n5824 (net)           1                   0.00      48.77 f
+  F2/T1/CORDIC/vec_stage2/U1043/CO (FADDX1_RVT)           0.03      0.20      48.97 f
+  F2/T1/CORDIC/vec_stage2/n5839 (net)           1                   0.00      48.97 f
+  F2/T1/CORDIC/vec_stage2/U1052/CO (FADDX1_RVT)           0.03      0.20      49.17 f
+  F2/T1/CORDIC/vec_stage2/n5854 (net)           1                   0.00      49.17 f
+  F2/T1/CORDIC/vec_stage2/U1061/CO (FADDX1_RVT)           0.03      0.20      49.37 f
+  F2/T1/CORDIC/vec_stage2/n5873 (net)           1                   0.00      49.37 f
+  F2/T1/CORDIC/vec_stage2/U1070/CO (FADDX1_RVT)           0.03      0.20      49.57 f
+  F2/T1/CORDIC/vec_stage2/n5887 (net)           1                   0.00      49.57 f
+  F2/T1/CORDIC/vec_stage2/U1077/CO (FADDX1_RVT)           0.03      0.20      49.77 f
+  F2/T1/CORDIC/vec_stage2/n5912 (net)           1                   0.00      49.77 f
+  F2/T1/CORDIC/vec_stage2/U1099/S (FADDX1_RVT)            0.02      0.19      49.96 f
+  F2/T1/CORDIC/vec_stage2/n5890 (net)           1                   0.00      49.96 f
+  F2/T1/CORDIC/vec_stage2/R_7454/D (DFFX1_RVT)            0.02      0.06      50.02 f
+  data arrival time                                                           50.02
+
+  clock core_clk (rise edge)                                       50.00      50.00
+  clock network delay (ideal)                                       0.10      50.10
+  clock uncertainty                                                -0.05      50.05
+  F2/T1/CORDIC/vec_stage2/R_7454/CLK (DFFX1_RVT)                    0.00      50.05 r
+  library setup time                                               -0.01      50.04
+  data required time                                                          50.04
+  ---------------------------------------------------------------------------------------------------------
+  data required time                                                          50.04
+  data arrival time                                                          -50.02
+  ---------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                  0.02
+
+
+1

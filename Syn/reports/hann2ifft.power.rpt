@@ -1,0 +1,85 @@
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : hann2ifft
+Version: T-2022.03-SP3
+Date   : Fri Dec  8 16:28:29 2023
+****************************************
+
+
+Library(s) Used:
+
+    saed32rvt_tt1p05v25c (File: /afs/umich.edu/class/eecs598-002/SAED32/SAED32_EDK/lib/stdcell_rvt/db_ccs/saed32rvt_tt1p05v25c.db)
+
+
+Operating Conditions: tt1p05v25c   Library: saed32rvt_tt1p05v25c
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+hann2ifft              540000            saed32rvt_tt1p05v25c
+hann2ifft_hanning_0    8000              saed32rvt_tt1p05v25c
+hann2ifft_fft2ifft_0   540000            saed32rvt_tt1p05v25c
+hann2ifft_fft_1        140000            saed32rvt_tt1p05v25c
+hann2ifft_top_0        140000            saed32rvt_tt1p05v25c
+hann2ifft_ifft_0       140000            saed32rvt_tt1p05v25c
+hann2ifft_sdf_r22_LOG_DEPTH5_0 35000     saed32rvt_tt1p05v25c
+hann2ifft_sdf_r22_LOG_DEPTH3_0 35000     saed32rvt_tt1p05v25c
+hann2ifft_sort_0       140000            saed32rvt_tt1p05v25c
+hann2ifft_CORDIC_modify_0 35000          saed32rvt_tt1p05v25c
+hann2ifft_noise_cancel_seperate_0 35000  saed32rvt_tt1p05v25c
+hann2ifft_CORDIC1_0    35000             saed32rvt_tt1p05v25c
+hann2ifft_fft_0        140000            saed32rvt_tt1p05v25c
+hann2ifft_CORDIC_stage0_3 8000           saed32rvt_tt1p05v25c
+hann2ifft_CORDIC_stage0_2 8000           saed32rvt_tt1p05v25c
+hann2ifft_CORDIC_stage0_1 8000           saed32rvt_tt1p05v25c
+hann2ifft_CORDIC_stage0_0 8000           saed32rvt_tt1p05v25c
+hann2ifft_CORDIC_stage0_4 8000           saed32rvt_tt1p05v25c
+hann2ifft_CORDIC_stage_3 8000            saed32rvt_tt1p05v25c
+hann2ifft_CORDIC_stage_2 8000            saed32rvt_tt1p05v25c
+hann2ifft_CORDIC_stage_1 8000            saed32rvt_tt1p05v25c
+hann2ifft_CORDIC_stage_0 8000            saed32rvt_tt1p05v25c
+hann2ifft_CORDIC_stage_4 16000           saed32rvt_tt1p05v25c
+hann2ifft_sort_1       70000             saed32rvt_tt1p05v25c
+hann2ifft_sdf_r22_LOG_DEPTH5_1 70000     saed32rvt_tt1p05v25c
+hann2ifft_sdf_r22_LOG_DEPTH3_1 35000     saed32rvt_tt1p05v25c
+
+
+Global Operating Voltage = 1.05 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+Attributes
+----------
+i - Including register clock pin internal power
+
+
+  Cell Internal Power  =   4.8140 mW   (96%)
+  Net Switching Power  = 190.3755 uW    (4%)
+                         ---------
+Total Dynamic Power    =   5.0044 mW  (100%)
+
+Cell Leakage Power     =   9.0174 mW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network  4.7002e+03            0.0000            0.0000        4.7002e+03  (  33.52%)  i
+register          25.3203            9.4495        4.0992e+09        4.1341e+03  (  29.48%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational     88.3945          180.9222        4.9182e+09        5.1875e+03  (  37.00%)
+--------------------------------------------------------------------------------------------------
+Total          4.8140e+03 uW       190.3717 uW     9.0174e+09 pW     1.4022e+04 uW
+1
